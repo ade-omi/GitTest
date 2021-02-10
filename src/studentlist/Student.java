@@ -6,12 +6,13 @@
 package studentlist;
 
 /**
- *This class represents students in our application
+ * This class represents students in our application
+ *
  * @author markb
  */
 public class Student {
     //change this please
-    
+
     private String name;
 
     public Student(String name) {
@@ -26,7 +27,4 @@ public class Student {
         this.name = name;
     }
 
-    
-    
-    
 }
