@@ -10,6 +10,7 @@ package studentlist;
  * @author markb
  */
 public class Student {
+    //change this please
     
     private String name;
 
