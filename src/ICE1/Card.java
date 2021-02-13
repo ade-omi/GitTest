@@ -15,7 +15,7 @@ package ICE1;
  * @author dancye
  */
 public class Card {
-
+//test
     private String suit; //clubs, spades, diamonds, hearts
     private int value;//1-13
 
