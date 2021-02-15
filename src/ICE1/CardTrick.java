@@ -49,19 +49,25 @@ public class CardTrick {
         userC.setValue(userValue);
         System.out.println("Heres your Card: " + userC);
 
+         //LUCKYCARD 
+        Card luckCard = new Card();
+        luckCard.setValue(7);
+        luckCard.setSuit(Card.SUITS[2]);
+        
         // and search magicHand here
         boolean match = false;
         for (Card card : magicHand) {
             if (card.getValue() == userC.getValue()
                     && card.getSuit().equals(userC.getSuit())) {
                 match = true;
-                break;
-            }
+                System.out.println("Your guess was right");
+            }else if(card.getValue() == luckCard.getValue()
+                    && card.getSuit().equals(luckCard.getSuit())){
+                match = true;
+                System.out.println("Your lucky card won!");
+                break;}
         }
-        //LUCKYCARD 
-        Card luckCard = new Card();
-        luckCard.setValue(7);
-        luckCard.setSuit(Card.SUITS[2]);
+       
         
         //Then report the result here
         System.out.println("Your guess was: " + match);
