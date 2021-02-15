@@ -58,6 +58,11 @@ public class CardTrick {
                 break;
             }
         }
+        //LUCKYCARD 
+        Card luckCard = new Card();
+        luckCard.setValue(7);
+        luckCard.setSuit(Card.SUITS[2]);
+        
         //Then report the result here
         System.out.println("Your guess was: " + match);
 
